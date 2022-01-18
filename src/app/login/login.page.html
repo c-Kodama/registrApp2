@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="../../assets/img/user.png" class="container">
+  <div id="container">
+    <form  #form="ngForm" (ngSubmit)="login(form)">
+      <h1 id="subtitulo" >Iniciar sesión</h1>
+        <div class="cajita">
+          <ion-item lines="none">
+            <ion-label position="stacked">nombre de usuario</ion-label>
+            <ion-button  expand="block" fill="outline">
+              <ion-input  name="usuario" type="text" ngModel required></ion-input>
+            </ion-button>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-label position="stacked">contraseña</ion-label>
+            <ion-button expand="block" fill="outline">
+             <ion-input name="password" type="password" ngModel required></ion-input>
+            </ion-button>      
+          </ion-item>
+          <ion-item lines="none"> 
+             <h4 id="subsubtitulo">recuperar contraseña</h4>
+          </ion-item>
+        </div>
+        <div padding>
+          <ion-button [routerLink]="['/menu-alummno']" id="button" type="submit" color="tertiary">Ingresar</ion-button>
+        </div>
+    </form>
+  </div>
+</ion-content>

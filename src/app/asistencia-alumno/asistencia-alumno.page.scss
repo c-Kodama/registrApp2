@@ -1,0 +1,66 @@
+:root[mode=ios] .Ruda,
+:root[mode=md] .Ruda{
+  --ion-font-family:  'Ruda'!important;
+  font-family:  'Ruda' !important;
+}
+
+#subtitulo{
+    font-size: small;
+    font-family: Ruda;
+    text-align: center;
+   }
+
+#container{
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    top: 35px;
+
+    background: #ECF5FD;
+    h1{
+        position: absolute;
+        font-family: Ruda;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+        left: 12%;
+        top: 12%;
+
+        color: #000000;
+    }
+}
+
+#bloques{
+    position: absolute;
+    left: 0px;
+    top: 135px;
+    #boton{
+        width: 73%;
+        height: 61px;
+        top: 303px;
+
+        p{
+            font-family: Ruda;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: left;
+      
+            align-items: left;
+            white-space: normal
+        }
+
+    }
+
+    #boton2{
+        width: 27%px;
+        height: 61px;
+        top: 65px;
+
+
+
+    }
+}
